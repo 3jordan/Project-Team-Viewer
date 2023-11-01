@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Viewers</title>
+    <link rel="stylesheet" href="{% static "base.css" %}">
+  </head>
+  <body>
+    <nav>
+        <a href="/management">Management</a>
+        <a href="/procurement">Procurement</a>
+        <a href="/documentation">Documentation</a>
+        <a href="/community">Community</a>
+        <a href="/">Home</a>
+    </nav>
+    <main>
+        {% block content %}
+        <h1 class="hero"> Welcome To The Base Camp Team Viewer </h1>
+        <div class="team-buttons">
+          <a href="/management">Management</a>
+          <a href="/procurement">Procurement</a>
+          <a href="/documentation">Documentation</a>
+          <a href="/community">Community</a>
+        </div>
+        {% endblock content %}
+    </main>
+  </body>
+</html>
